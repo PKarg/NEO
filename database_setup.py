@@ -24,6 +24,8 @@ class NEO(Base):
     Mean_Anom_deg = Column(Float)
     AbsMag = Column(Float)
     SlopeParamG = Column(Float)
+    Aphel_AU = Column(Float)
+    Perihel_AU = Column(Float)
 
 
 if __name__ == "__main__":

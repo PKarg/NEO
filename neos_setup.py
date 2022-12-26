@@ -76,7 +76,9 @@ def extract_data_from_source(source_path: Union[pathlib.Path, str]) -> Union[Lis
                     "ArgP_deg": float(line[6]),
                     "Mean_Anom_deg": float(line[7]),
                     "AbsMag": float(line[8]),
-                    "SlopeParamG": float(line[9])
+                    "SlopeParamG": float(line[9]),
+                    "Aphel_AU": (1 + float(line[3])) * float(line[2]),
+                    "Perihel_AU": (1 - float(line[3])) * float(line[2])
 
                 })
 
